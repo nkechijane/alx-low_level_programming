@@ -13,8 +13,7 @@ int main(void)
 	for (var = 'a'; var <= 'z'; var++)
 	{
 		putchar(var);
-		putchar('\n');
 	}
-
+	putchar('\n');
 	return (0);
 }
