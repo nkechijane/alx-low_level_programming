@@ -12,8 +12,14 @@ int main(void)
 	for (var = 0; var < 10; var++)
 	{
 		putchar((var % 10) + '0');
-		putchar(',');
-		putchar(' ');
+		
+		if (var >= 0 && var < 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+		else
+			continue;
 	}
 
 	putchar('\n');
