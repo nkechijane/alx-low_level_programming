@@ -1,21 +1,19 @@
 #include "main.h"
 /**
- * main - this program prints _putchar
+ * main -  prints _putchar, followed by a new line
  *
- * created by Jane
- *
- * Return: (0) if successful
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-char var[] = "_putchar";
-int ii = 0;
-int lenVar = sizeof(var) / sizeof(var[0]);
-while (ii != '\0')
-for (ii = 0; ii < lenvar -1; ii++)
-{
-_putchar(var[ii]);
-ii++;
-}
-_putchar('\n')
+_putchar('_');
+_putchar('p');
+_putchar('u');
+_putchar('t');
+_putchar('c');
+_putchar('h');
+_putchar('a');
+_putchar('r');
+_putchar('\n');
+return (0);
 }
