@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
  * main - first 50 fibonacci number
@@ -12,13 +12,13 @@ int main(void)
 	long int result;
 	long int n1 = 1, n2 = 2, nlimit = 50;
 
-	printf("%lu, %lu,\n", n1, n2);
+	printf("%lu, %lu, ", n1, n2);
 	for (i = 2; i < nlimit; i++)
 	{
 		result = n1 + n2;
 		n1 = n2;
 		n2 = result;
-		printf("%lu\n", result);
+		printf("%lu", result);
 		if (i != nlimit - 1)
 			printf(", ");
 	}
