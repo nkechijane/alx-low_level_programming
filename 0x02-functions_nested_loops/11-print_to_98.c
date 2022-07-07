@@ -50,7 +50,7 @@ void print_to_98(int var)
 }
 
 /**
- * print - to print
+ * print - to print the number n
  * @n: var
  */
 
