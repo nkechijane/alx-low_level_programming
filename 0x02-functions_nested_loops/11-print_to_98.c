@@ -6,7 +6,7 @@
  *
  */
 
-void print(int n)
+void print(int n);
 
 /**
  * print-t0_98 - print all natural numbers from var to 98
