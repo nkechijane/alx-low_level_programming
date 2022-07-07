@@ -14,7 +14,7 @@ int main(void)
 	unsigned long int temp1, temp2, temp3;
 	int count;
 
-	printf("%lu, %lu,\n", n1, n2);
+	printf("%lu, %lu, ", n1, n2);
 	for (count = 2; count < 98; count++)
 	{
 		if (n1 + n2 > LARGEST || a2 > 0 || a1 > 0)
