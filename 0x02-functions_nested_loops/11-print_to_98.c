@@ -1,8 +1,16 @@
 #include "main.h"
 
 /**
- * print_to_98 - print all natural numbers from var to 98
- * @var: the statrting limit
+ * print - print variable recursively using _putchar
+ * @n: the variable to print
+ *
+ */
+
+void print(int n)
+
+/**
+ * print-t0_98 - print all natural numbers from var to 98
+ * @var: the starting limit
  *
  */
 
