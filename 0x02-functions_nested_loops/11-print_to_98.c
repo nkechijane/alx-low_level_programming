@@ -28,7 +28,7 @@ void print_to_98(int var)
 	{
 		int j;
 
-		for (j != stop)
+		for (j = var; j <= stop; j++)
 		{
 			print(j);
 			if (j != stop)
