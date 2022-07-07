@@ -21,3 +21,15 @@ else if (n % 3 == 0)
 {
 printf(" Fizz");
 }
+else if (n % 5 == 0)
+{
+printf(" Buzz");
+}
+else
+{
+printf(" %d", n);
+}
+}
+printf("\n");
+return (0);
+}
