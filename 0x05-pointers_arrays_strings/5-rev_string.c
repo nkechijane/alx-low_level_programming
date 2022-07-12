@@ -1,36 +1,27 @@
-#include <stdlib.h>
 #include "main.h"
-#include <limits.h>
-#include <string.h>
+
 /**
- * _atoi - coverts a string to integer
- * @str: pointer to string to be converted
+ * rev_string - reverse a string
+ * @s: the string to reverse
  *
- * Return: converted string
+ * Return: void
  */
 
-int _atoi(char *str)
+void rev_string(char *s)
 {
-	int sign = 1, base = 0, i = 0;
+	char *t = s;
 
-	for (i = 0; str[i] != '\0' && (str[i] < '0' || str[i] > '9'); i++)
+	if (s)
 	{
-		if (str[i] == '-' || str[i] == '+')
-			sign *= 1 - 2 * (str[i] == '-');
-		if (str[i + 1] == '\0')
-			return (0);
-	}
-	while (str[i] >= '0' && str[i] <= '9')
-	{
-		if (base > INT_MAX / 10	|| (base == INT_MAX / 10
-			&& str[i] - '0' > 7))
+		while (*t)
+			++t;
+
+		while (s < --t)
 		{
-			if (sign == 1)
-				return (INT_MAX);
-			else
-				return (INT_MIN);
+			*s ^= *t;
+			*t ^= *s;
+			*s ^= *t;
+			++s;
 		}
-		base = 10 * base + (str[i++] - '0');
 	}
-		return (base * sign);
 }
