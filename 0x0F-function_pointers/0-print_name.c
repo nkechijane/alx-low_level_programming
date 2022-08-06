@@ -3,12 +3,15 @@
 /**
  * print_name - prints a name.
  * @name: input name.
- i* @f: function pointer.
+ i* @f: function pointer to call back a function.
  *
  * Return: no return.
  */
 void print_name(char *name, void (*f)(char *))
 {
-	if (name && f)
-		f(name);
+	if (name == NULL || f == NULL)
+		return;
+
+
+	f(name);
 }
